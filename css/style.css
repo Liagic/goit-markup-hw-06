@@ -5,6 +5,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  background-color: #fff;
 }
 a {
   font-family: 'Roboto', sans-serif;
@@ -32,11 +33,9 @@ ul {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-.logo-web {
   color: #4d5ae5;
 }
 .logo-studio-top {
@@ -48,16 +47,16 @@ ul {
 
 .hero {
   background-color: #2e2f42;
+  line-height: 1.07;
 }
-.hero > h1 {
+.hero-title {
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.07143;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
 }
-.hero > button {
+.hero-order-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -92,23 +91,12 @@ ul {
   background: #f4f4fd;
 }
 .team > ul > li {
-  border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
-  width: 264px;
-  height: 380px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
 }
 
-.portfolio > ul > li {
-  border: 1px solid #e7e9fc;
-  width: 360px;
-  height: 420px;
-}
-footer {
+.bottom-content {
   background: #2e2f42;
 }
-footer > p {
+.bottom-content-text {
   color: #f4f4fd;
 }

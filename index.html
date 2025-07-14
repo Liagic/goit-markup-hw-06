@@ -4,6 +4,21 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta charset="UTF-8" />
     <title>WEBSTUDIO MAIN PAGE</title>
+    <!-- Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize CSS-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -11,25 +26,37 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Custom CSS-->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
+  <!-- Body-->
   <body>
     <header>
       <nav class="navigation">
-        <a href="./index.html" class="logo"
-          ><span class="logo-web">Web</span
-          ><span class="logo-studio-top">Studio</span></a
-        >
-        <ul>
-          <li><a href="">Studio</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Contacts</a></li>
+        <a href="./index.html" class="logo">
+          Web<span class="logo-studio-top">Studio</span>
+        </a>
+        <ul class="navigation-list">
+          <li>
+            <a href="">Studio</a>
+          </li>
+          <li>
+            <a href="">Portfolio</a>
+          </li>
+          <li>
+            <a href="">Contacts</a>
+          </li>
         </ul>
       </nav>
       <address class="contact-info">
         <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          <li>
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
         </ul>
       </address>
     </header>
@@ -37,13 +64,13 @@
     <!-- MAIN Content-->
     <main>
       <section class="hero">
-        <h1>Effective Solutions for Your Business</h1>
-        <button type="button">Order Service</button>
+        <h1 class="hero-title">Effective Solutions for Your Business</h1>
+        <button type="button" class="hero-order-button">Order Service</button>
       </section>
 
       <!-- Section Mission-->
       <section class="mission">
-        <h2>Our Mission</h2>
+        <h2 class="mission-title">Our Mission</h2>
         <ul>
           <li>
             <h3>Strategy</h3>
@@ -78,7 +105,7 @@
 
       <!-- Section Team-->
       <section class="team">
-        <h2>Our Team</h2>
+        <h2 class="team-title">Our Team</h2>
         <ul>
           <li>
             <img
@@ -132,7 +159,7 @@
               src="./images/portfolio-case-1.jpg"
               width="360"
               height="300"
-              alt=""
+              alt="A mobile application interface for a banking service with a charts and other functions"
             />
             <h3>Banking App</h3>
             <p>App</p>
@@ -142,7 +169,7 @@
               src="./images/portfolio-case-2.jpg"
               width="360"
               height="300"
-              alt=""
+              alt="a terminal shows a QR payment link and a phone scans it"
             />
             <h3>Cashless Payment</h3>
             <p>Marketing</p>
@@ -152,19 +179,17 @@
               src="./images/portfolio-case-3.jpg"
               width="360"
               height="300"
-              alt=""
+              alt="A designed multiplatform application interface for meditation with a calming background"
             />
             <h3>Meditaion App</h3>
             <p>App</p>
           </li>
-        </ul>
-        <ul>
           <li>
             <img
               src="./images/portfolio-case-4.jpg"
               width="360"
               height="300"
-              alt=""
+              alt="A cab with a driver on his board placed phone with a mobile application interface where shows a map and a route"
             />
             <h3>Taxi Service</h3>
             <p>Marketing</p>
@@ -174,7 +199,7 @@
               src="./images/portfolio-case-5.jpg"
               width="360"
               height="300"
-              alt=""
+              alt="A mobile screen lock with a design of a screen with illustrations of moon"
             />
             <h3>Screen Illustrations</h3>
             <p>Design</p>
@@ -184,7 +209,7 @@
               src="./images/portfolio-case-6.jpg"
               width="360"
               height="300"
-              alt=""
+              alt="A girl with a phone in her hand"
             />
             <h3>Online Courses</h3>
             <p>Marketing</p>
@@ -193,12 +218,12 @@
       </section>
     </main>
     <!-- Footer-->
-    <footer>
+    <footer class="bottom-content">
       <a href="./index.html" class="logo"
-        ><span class="logo-web">Web</span
-        ><span class="logo-studio-bot">Studio</span></a
-      >
-      <p>
+        >Web
+        <span class="logo-studio-bot">Studio</span>
+      </a>
+      <p class="bottom-content-text">
         Increase the flow of customers and sales for your business with digital
         marketing &amp; growth solutions.
       </p>
