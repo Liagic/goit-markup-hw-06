@@ -18,8 +18,9 @@ ul {
   list-style: none;
 }
 .navigation-link:hover,
+.navigation-link:focus,
 .contact-info-link:hover,
-.hero-order-button:hover {
+.contact-info-link:focus {
   color: #404bbf;
 }
 
@@ -72,6 +73,10 @@ ul {
   background-color: #4d5ae5;
   cursor: pointer;
 }
+.hero-order-button:hover,
+.hero-order-button:focus {
+  background-color: #404bbf;
+}
 
 .mission-title,
 .team-title,
@@ -83,9 +88,16 @@ ul {
   text-align: center;
   color: #2e2f42;
 }
+.team-list-item {
+  background-color: #fff;
+}
+.team-member-role {
+  font-size: 16px;
+}
 .portfolio-title {
   text-transform: capitalize;
 }
+
 .mission-item,
 .team-member,
 .portfolio-case {
