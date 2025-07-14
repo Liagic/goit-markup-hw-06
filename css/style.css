@@ -94,6 +94,7 @@ ul {
 .team-member-role {
   font-size: 16px;
 }
+.team-title,
 .portfolio-title {
   text-transform: capitalize;
 }
