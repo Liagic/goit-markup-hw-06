@@ -17,16 +17,10 @@ a {
 ul {
   list-style: none;
 }
-
-.navigation > ul a {
-  font-weight: 500;
-  color: #2e2f42;
-}
-
-.contact-info a {
-  font-weight: 400;
-  color: #434455;
-  font-style: normal;
+.navigation-link:hover,
+.contact-info-link:hover,
+.hero-order-button:hover {
+  color: #404bbf;
 }
 
 .logo {
@@ -41,8 +35,21 @@ ul {
 .logo-studio-top {
   color: #2e2f42;
 }
-.logo-studio-bot {
+.logo-studio-bottom {
   color: #f4f4fd;
+}
+
+.navigation-link {
+  font-weight: 500;
+  color: #2e2f42;
+}
+
+.contact-info {
+  font-style: normal;
+}
+.contact-info-link {
+  font-weight: 400;
+  color: #434455;
 }
 
 .hero {
@@ -63,23 +70,25 @@ ul {
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
+  cursor: pointer;
 }
 
-.mission h2 {
-  display: none;
-}
-.team h2,
-.portfolio h2 {
+.mission-title,
+.team-title,
+.portfolio-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
 }
-.mission h3,
-.team h3,
-.portfolio h3 {
+.portfolio-title {
+  text-transform: capitalize;
+}
+.mission-item,
+.team-member,
+.portfolio-case {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -89,9 +98,6 @@ ul {
 
 .team {
   background: #f4f4fd;
-}
-.team > ul > li {
-  background: #fff;
 }
 
 .bottom-content {
