@@ -239,10 +239,6 @@ p {
   padding: 120px 0;
 }
 .container-portfolio {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 .portfolio-title {
   margin-bottom: 72px;
