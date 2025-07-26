@@ -128,15 +128,17 @@ p {
   display: block;
   padding: 24px 0;
 }
-.hero {
-  background-color: #2e2f42;
-  line-height: 1.07;
+.container-hero {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 188px 0;
   gap: 48px;
+}
+.hero {
+  background-color: #2e2f42;
+  line-height: 1.07;
 }
 .hero-title {
   font-weight: 700;
@@ -155,8 +157,9 @@ p {
   background-color: #4d5ae5;
   cursor: pointer;
   border-radius: 4px;
+  border: none;
+  min-width: 169px;
   padding: 16px 32px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
 }
 .hero-order-button:hover,
@@ -164,6 +167,13 @@ p {
   background-color: #404bbf;
 }
 .mission {
+}
+.container-mission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 120px 0;
 }
 .mission-title-visual-hidden {
   position: absolute;
@@ -178,44 +188,88 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.mission-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mission-list li {
+  flex-basis: calc((100% - 72px) / 4);
+}
 .mission-item {
+  padding-bottom: 8px;
 }
 .mission-item-text {
+}
+.container-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 120px 0;
 }
 .team {
   background: #f4f4fd;
 }
 .team-title {
+  padding-bottom: 72px;
 }
 .team-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
 }
-
 .team-list-item {
+  flex-basis: calc((100% - 72px) / 4);
   background-color: #fff;
 }
 .team-member {
+  padding: 32px 0 8px 0;
 }
 .team-member-role {
   font-size: 16px;
+  padding-bottom: 32px;
 }
 .portfolio {
 }
+.container-portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 120px 0;
+}
 .portfolio-title {
+  padding-bottom: 72px;
 }
 .portfolio-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 48px 24px;
 }
 .portfolio-list-item {
+  flex-basis: calc((100% - 48px) / 3) px;
+  border: 1px solid #e7e9fc;
 }
 .portfolio-case {
+  padding: 32px 0 8px 16px;
 }
 .portfolio-case-text {
+  padding: 0 0 32px 16px;
 }
 .bottom-content {
   background: #2e2f42;
+  padding: 100px 0;
 }
+
 .logo-studio-bottom {
   color: #f4f4fd;
+  padding-bottom: 16px;
 }
 .bottom-content-text {
   color: #f4f4fd;
+  max-width: 264px;
 }
