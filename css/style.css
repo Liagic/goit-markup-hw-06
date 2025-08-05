@@ -368,6 +368,10 @@ p {
 }
 .bottom-content-social-text {
   color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
 .bottom-content-social-list {
