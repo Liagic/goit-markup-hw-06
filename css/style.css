@@ -204,7 +204,7 @@ p {
 }
 .container-mission {
 }
-.mission-title-visual-hidden {
+.visual-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -439,7 +439,8 @@ p {
   margin-bottom: 4px;
 }
 .overlay-form-container-input {
-  display: block;
+  position: relative;
+  margin-bottom: 8px;
 }
 .overlay-form-input {
   width: 100%;
@@ -451,9 +452,7 @@ p {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.overlay-form-input:focus {
-  border-color: #4d5ae5;
-}
+
 .overlay-form-input-icon {
   position: absolute;
   left: 16px;
@@ -461,8 +460,59 @@ p {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-container {
-  margin-bottom: 8px;
+.overlay-form-input:focus {
+  border-color: #4d5ae5;
+}
+.overlay-form-input:focus + .overlay-form-input-icon {
+  fill: #4d5ae5;
+}
+.form-container-message {
+  margin-bottom: 16px;
+}
+.overlay-form-textarea {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overlay-form-textarea:focus {
+  border-color: #4d5ae5;
+}
+.overlay-form-checkbox-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-left: 8px;
+}
+.overlay-form-checkbox-label-additional {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.overlay-form-checkbox-label:checked {
+  background-color: #404bbf;
+  border: none;
+}
+.overlay-form-checkbox-label:checked .overlay-form-checkbox-icon {
+  fill: #f4f4fd;
 }
 .bottom-content {
   background: #2e2f42;

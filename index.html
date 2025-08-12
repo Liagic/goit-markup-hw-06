@@ -77,7 +77,7 @@
       <!-- Section Mission-->
       <section class="mission">
         <div class="container container-mission">
-          <h2 class="mission-title-visual-hidden">Our Mission</h2>
+          <h2 class="visual-hidden">Our Mission</h2>
           <ul class="mission-list">
             <li class="mission-list-item">
               <div class="mission-item-card-icon">
@@ -556,7 +556,7 @@
           Leave your contacts and we will call you back
         </p>
         <form class="overlay-fill-form">
-          <div class="form-container form-container-name">
+          <div class="form-container">
             <label class="overlay-form-label" for="user-name">Name</label>
             <div class="overlay-form-container-input">
               <input
@@ -570,7 +570,7 @@
               </svg>
             </div>
           </div>
-          <div class="form-container form-container-phone">
+          <div class="form-container">
             <label class="overlay-form-label" for="user-phone">Phone</label>
             <div class="overlay-form-container-input">
               <input
@@ -584,7 +584,7 @@
               </svg>
             </div>
           </div>
-          <div class="form-container form-container-email">
+          <div class="form-container">
             <label class="overlay-form-label" for="user-email">Email</label>
             <div class="overlay-form-container-input">
               <input
@@ -598,19 +598,35 @@
               </svg>
             </div>
           </div>
-          <div class="form-container form-container-message">
+          <div class="form-container-message">
             <label class="overlay-form-label" for="user-comment">Comment</label>
-            <div class="overlay-form-container-input">
+            <div class="overlay-form-container-comment">
               <textarea
-                name="user-email"
-                id="user-email"
+                name="user-comment"
+                id="user-comment"
                 placeholder="Text input"
+                class="overlay-form-textarea"
               ></textarea>
             </div>
           </div>
-          <div class="form-container form-container-agreement">
-            <div class="form-container-input"></div>
-            <label></label>
+          <div class="overlay-form-container-agreement">
+            <div class="form-container-input">
+              <input
+                class="overlay-form-checkbox visual-hidden"
+                type="checkbox"
+                name="user-privacy"
+                id="user-privacy"
+                value="true"
+              />
+            </div>
+            <label for="user-privacy" class="overlay-form-checkbox-label">
+              <span class="overlay-form-checkbox-label-additional">
+                <svg class="overlay-form-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check-mark"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+            </label>
           </div>
         </form>
       </div>
