@@ -507,12 +507,16 @@ p {
   justify-content: center;
   fill: transparent;
 }
-.overlay-form-checkbox-label:checked {
+
+.overlay-form-checkbox:checked
+  + .overlay-form-checkbox-label
+  > .overlay-form-checkbox-label-additional {
+  fill: #f4f4fd;
   background-color: #404bbf;
   border: none;
 }
-.overlay-form-checkbox-label:checked .overlay-form-checkbox-icon {
-  fill: #f4f4fd;
+.overlay-privacy-link {
+  color: #4d5ae5;
 }
 .bottom-content {
   background: #2e2f42;
