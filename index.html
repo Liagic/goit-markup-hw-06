@@ -70,14 +70,16 @@
       <section class="hero">
         <div class="container container-hero">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-order-button">Order Service</button>
+          <button type="button" class="hero-order-button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
       <!-- Section Mission-->
       <section class="mission">
         <div class="container container-mission">
-          <h2 class="visual-hidden">Our Mission</h2>
+          <h2 class="visually-hidden">Our Mission</h2>
           <ul class="mission-list">
             <li class="mission-list-item">
               <div class="mission-item-card-icon">
@@ -545,9 +547,9 @@
     </footer>
 
     <!-- overlay content-->
-    <div class="overlay overlay-active">
+    <div class="overlay" data-modal>
       <div class="overlay-content">
-        <button type="button" class="overlay-close-button">
+        <button type="button" class="overlay-close-button" data-modal-close>
           <svg class="overlay-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-mark"></use>
           </svg>
@@ -605,11 +607,13 @@
               id="user-comment"
               placeholder="Text input"
               class="overlay-form-textarea"
+              spellcheck="false"
+              data-gramm="false"
             ></textarea>
           </div>
           <div class="overlay-form-container-agreement">
             <input
-              class="overlay-form-checkbox visual-hidden"
+              class="overlay-form-checkbox visually-hidden"
               type="checkbox"
               name="user-privacy"
               id="user-privacy"
@@ -625,9 +629,11 @@
               <a class="overlay-privacy-link" href="#">Privacy Policy</a>
             </label>
           </div>
+          <button type="submit" class="overlay-form-button-submit">Send</button>
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
 
