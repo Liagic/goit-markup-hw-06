@@ -494,54 +494,7 @@
         </div>
       </section>
     </main>
-    <!-- overlay content-->
-    <div class="overlay overlay-active">
-      <div class="overlay-content">
-        <div class="overlay-close-container">
-          <button type="button" class="overlay-close-button">
-            <svg width="8" height="8" class="overlay-close-icon">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-        <p class="overlay-text">
-          Leave your contacts and we will call you back
-        </p>
-        <form class="overlay-fill-form">
-          <label class="overlay-fill-element">
-            Name
-            <input type="text" name="user_name" class="overlay-input" />
-          </label>
-          <label class="overlay-fill-element">
-            Phone
-            <input type="phone" name="phone_number" class="overlay-input" />
-          </label>
-          <label class="overlay-fill-element">
-            Email
-            <input type="email" name="user_email" class="overlay-input" />
-          </label>
-          <label class="overlay-fill-element">
-            Comment
-            <textarea
-              name="user_message"
-              placeholder="Text input"
-              rows="5"
-              class="overlay-textarea"
-            ></textarea>
-          </label>
-          <label class="overlay-fill-element overlay-fill-element-checkbox">
-            <input
-              type="checkbox"
-              name="agreement_policy"
-              required
-              class="overlay-input-checkbox"
-            />I accept the terms and conditions of the
-            <a href="#" class="overlay-link">Privacy Policy</a>
-          </label>
-          <button type="submit" class="overlay-button">Send</button>
-        </form>
-      </div>
-    </div>
+
     <!-- Footer-->
     <footer class="bottom-content">
       <div class="container container-bottom-content">
@@ -590,6 +543,53 @@
         </div>
       </div>
     </footer>
+
+    <!-- overlay content-->
+    <div class="overlay overlay-active">
+      <div class="overlay-content">
+        <button type="button" class="overlay-close-button">
+          <svg class="overlay-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </button>
+        <p class="overlay-text">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="overlay-fill-form">
+          <label class="overlay-fill-element">
+            Name
+            <input type="text" name="user-name" class="overlay-input" />
+          </label>
+          <label class="overlay-fill-element">
+            Phone
+            <input type="tel" name="phone-number" class="overlay-input" />
+          </label>
+          <label class="overlay-fill-element">
+            Email
+            <input type="email" name="user-email" class="overlay-input" />
+          </label>
+          <label class="overlay-fill-element">
+            Comment
+            <textarea
+              name="user-message"
+              placeholder="Text input"
+              rows="5"
+              class="overlay-textarea"
+            ></textarea>
+          </label>
+          <label class="overlay-fill-element overlay-fill-element-checkbox">
+            <input
+              type="checkbox"
+              name="agreement-policy"
+              required
+              class="overlay-input-checkbox"
+            />I accept the terms and conditions of the
+            <a href="#" class="overlay-link">Privacy Policy</a>
+          </label>
+          <button type="submit" class="overlay-button">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
 
