@@ -227,8 +227,6 @@ p {
   border: none;
   background-color: #404bbf;
 }
-.menu-navigation {
-}
 .menu-navigation-list {
   display: flex;
   flex-direction: column;
@@ -268,8 +266,6 @@ p {
 }
 .menu-contact-info-phone {
   color: #4d5ae5;
-}
-.menu-content-social {
 }
 .menu-content-social-list {
   display: flex;
@@ -786,7 +782,6 @@ p {
 
   .bottom-content-text-logo {
     align-items: flex-start;
-    width: (100% - 24px - 208px);
   }
   .bottom-content-social-text {
     text-align: start;
